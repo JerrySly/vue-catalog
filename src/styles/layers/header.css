@@ -1,0 +1,22 @@
+.header {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(39, 39, 39, 0.1);
+  height: 72px;
+}
+.header__location {
+  max-width: 1190px;
+  margin: auto;
+  padding: 25px 20px 0px;
+}
+.location {
+  cursor: pointer;
+}
+
+.location__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  color: #272727;
+  margin-left: 7px;
+}

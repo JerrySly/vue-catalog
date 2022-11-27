@@ -1,0 +1,127 @@
+@media (max-width: 610px) {
+  .content__header {
+    text-align: center;
+  }
+}
+@media (max-width: 850px) {
+  .form__select_with-btn {
+    display: block;
+    text-align: center;
+  }
+  .custom-select {
+    display: flex;
+    justify-content: center;
+  }
+  .custom-select__input {
+    min-width: 400px;
+  }
+  .dialog {
+    min-width: 400px;
+  }
+  .form__btn {
+    margin-top: 20px;
+  }
+  .custom-select__options {
+    top: 52px;
+    text-align: left;
+  }
+}
+@media (max-width: 510px) {
+  .dialog {
+    min-width: 300px;
+  }
+  .custom-select__input {
+    min-width: 300px;
+  }
+}
+@media (max-width: 430px) {
+  .dialog {
+    min-width: 230px;
+  }
+  .custom-select__input {
+    min-width: 230px;
+  }
+}
+@media (max-width: 1180px) {
+  .categories__item {
+    margin-right: 20px;
+    flex: 1 1 25%;
+    height: 152px;
+  }
+  .categories__item:nth-child(4n) {
+    margin-right: 20px;
+  }
+  .categories__item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .categories__item:nth-last-child(1) {
+    margin-right: 25px;
+  }
+  .category {
+    max-width: 360px;
+  }
+}
+@media (max-width: 882px) {
+  .categories__item {
+    margin-right: 40px;
+    flex: 1 1 33%;
+  }
+  .categories__item:nth-child(3n) {
+    margin-right: 40px;
+  }
+  .categories__item:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 610px) {
+  .categories {
+    justify-content: center;
+  }
+  .categories__item {
+    margin-right: 20px;
+    flex: 1 1 50%;
+  }
+  .categories__item:nth-child(2n) {
+    margin-right: 20px;
+  }
+  .categories__item:nth-child(n) {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 1210px) {
+  .table__item {
+    flex: auto auto 33.333%;
+  }
+  .product {
+    min-width: 300px;
+  }
+}
+@media (max-width: 960px) {
+  .product {
+    max-width: 300px;
+  }
+}
+@media (max-width: 870px) {
+  .products {
+    display: block;
+  }
+  .products__filters {
+    margin-right: 0;
+  }
+  .title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .table__item {
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
+  .title__name {
+    display: block;
+  }
+}
+@media (max-width: 630px) {
+  .table__item {
+    margin-right: 0;
+  }
+}

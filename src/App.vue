@@ -1,30 +1,48 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <header class="header">
+    <div class="header__location location" @click="selectCityDialog = true">
+      <icon-location></icon-location>
+      <span class="location__text" v-if="selectedCity()">{{
+        JSON.parse(selectedCity()).city
+      }}</span>
+    </div>
+  </header>
+  <div class="content _container">
+    <router-view />
+  </div>
+  <select-city-dialog
+    v-if="selectCityDialog"
+    @close="selectCityDialog = false"
+  ></select-city-dialog>
+  <div
+    class="overlay"
+    v-if="selectCityDialog"
+    @click="selectCityDialog = false"
+  ></div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+<script>
+import SelectCityDialog from "./components/cities/SelectCityDialog.vue";
+import IconLocation from "./components/icons/IconLocation.vue";
+import { getCityById } from "./services/apiService";
+export default {
+  components: {
+    IconLocation,
+    SelectCityDialog,
+  },
+  data() {
+    return {
+      selectCityDialog: false,
+    };
+  },
+  mounted() {
+    getCityById(1).then((x) => {
+      localStorage.setItem("selectedCity", JSON.stringify(x));
+    });
+  },
+  computed: {
+    selectedCity() {
+      return () => localStorage.getItem("selectedCity");
+    },
+  },
+};
+</script>

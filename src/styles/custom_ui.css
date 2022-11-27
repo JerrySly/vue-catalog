@@ -1,0 +1,84 @@
+/* CUSTOM BUTTON */
+.custom-btn {
+  border: 2px solid rgba(151, 151, 151, 0.3);
+  border-radius: 24px;
+  background: linear-gradient(270deg, #ffa800 0%, #ff6f00 60.2%);
+  color: white;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  padding: 13px;
+  box-shadow: inset 0px 33px 25px 0 white, inset 0 66px 15px 0px #ccc,
+    inset 0 99px 5px 0px #fff;
+}
+.custom-btn__btn {
+  border: 2px solid rgba(151, 151, 151, 0.3);
+  border-radius: 24px;
+  background: linear-gradient(270deg, #ffa800 0%, #ff6f00 60.2%);
+  color: white;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  padding: 13px;
+}
+.custom-btn__shadow {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 168, 0, 0.6) 0%,
+    rgba(255, 111, 0, 0.6) 100%
+  );
+  filter: blur(13.5914px);
+  height: 48px;
+}
+/* CUSTOM SELECT */
+.custom-select {
+  position: relative;
+}
+.custom-select__input {
+  min-width: 540px;
+  height: 48px;
+}
+
+.custom-select__input_searching {
+  border: 1px solid #272727;
+}
+.custom-select__delete {
+  position: absolute;
+  right: 16px;
+  top: 18px;
+  cursor: pointer;
+}
+.custom-select__options {
+  background: #ffffff;
+  border: 1px solid #272727;
+  border-top: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  padding: 5px 0px 12px 0px;
+  width: 100%;
+  max-height: 222px;
+  overflow-y: scroll;
+  z-index: 5;
+}
+.custom-select__option {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #979797;
+  margin-top: 7px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.custom-select__option:hover {
+  color: #272727;
+}
