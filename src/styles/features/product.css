@@ -1,6 +1,6 @@
 .products {
   display: flex;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 .products__filters {
   margin-right: 34px;
